@@ -10,7 +10,7 @@ main.card_container {
 
 /* User Content */
 
-.user_container {
+.users_container {
     border-right: 2px solid black;
     width: 50%;
     display: flex;
@@ -18,15 +18,53 @@ main.card_container {
     align-items: center;
 }
 
-.user_content {
+.users_content {
     height: 90%;
     width: 100%;
+    overflow-y: scroll;
+    border-top: 3px solid rgba(128, 128, 128, 0.187);
+}
+
+.user_card {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 1px solid grey;
+}
+
+.user_card > p {
+    margin: 0;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+
+}
+
+.user_data {
+    width: 60%;
+}
+
+.user_btn {
+    width: 20%;
+}
+
+.user_btn input {
+    width: 80%;
+    margin: 3px;
 }
 
 /* Form Content */
 
 .form_content {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_content form {
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
